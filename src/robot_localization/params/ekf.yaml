@@ -1,0 +1,37 @@
+ekf_filter_node:
+  ros__parameters:
+    frequency: 30.0
+    two_d_mode: true
+    publish_tf: true
+    map_frame: map
+    odom_frame: odom
+    base_link_frame: base_link
+    world_frame: odom
+
+    # --- APENAS IMU ---
+    imu0: /imu/data
+    imu0_config: [false, false, false,   # X, Y, Z
+                  false, false, true,    # Roll, Pitch, YAW
+                  false, false, false,   # Vx, Vy, Vz
+                  false, false, true,    # Vroll, Vpitch, VYAW (Velocidade angular)
+                  false, false, false]   # Ax, Ay, Az
+    imu0_differential: false
+
+# ekf_filter_node:
+#   ros__parameters:
+#     frequency: 30.0
+#     two_d_mode: true
+#     publish_tf: true
+#     map_frame: map
+#     odom_frame: odom
+#     base_link_frame: base_link
+#     world_frame: odom
+
+#     # --- APENAS IMU ---
+#     imu0: /imu/data
+#     imu0_config: [false, false, false,   # X, Y, Z
+#                   false, false, true,    # Roll, Pitch, YAW
+#                   false, false, false,   # Vx, Vy, Vz
+#                   false, false, true,    # Vroll, Vpitch, VYAW (Velocidade angular)
+#                   false, false, false]   # Ax, Ay, Az
+#     imu0_differential: false
