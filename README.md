@@ -1,3 +1,5 @@
+ ad
+
 # Base_ws
 
 Este repositorio é dedicado a ser base de teleoperações
@@ -5,7 +7,6 @@ Este repositorio é dedicado a ser base de teleoperações
 ## ## `sensor_msgs/msg/joy.hpp`
 
 boa parte dos codigos faram uso do topico joy , como subscriber ele permite controlar o tpico dsejado com um publisher. O codigo abaiuxo ilustra o mapeamento dos botoes em c++.
-
 
 ```c
    --- LEITURA DOS BOTÕES (BUTTONS) ---
@@ -33,4 +34,7 @@ boa parte dos codigos faram uso do topico joy , como subscriber ele permite cont
     if (button_l1)       RCLCPP_INFO(this->get_logger(), "Botão pressionado: [ L1 ]");
     if (button_r1)       RCLCPP_INFO(this->get_logger(), "Botão pressionado: [ R1 ]");
 ```
+
 # base_ws
+
+as
